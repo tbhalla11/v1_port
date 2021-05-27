@@ -3,14 +3,50 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Verdana, Geneva, Tahoma, sans-serif; 
+    font-family: monospace; 
 }
 
 section{
     padding: 100px;
 
 }
+/*HEADER*/
 
+.header{
+    width: 100%;
+    background-color: black;
+}
+.header ul{
+    text-align: right;
+}
+.header ul li{
+    list-style: none;
+    display: inline-block;
+}
+.header ul li a{
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 18px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 2px;
+    font-weight: 500;
+    padding: 25px;
+    transition: all ease 0.5;
+    width: 189px;
+}
+.header ul li a:hover{
+    opacity: 1;
+    font-weight: 900;
+
+}
+
+
+
+
+
+/*INTRO/LANDING*/
 .banner {
     position: relative;
     min-height: 100vh;
@@ -29,7 +65,7 @@ section{
     line-height: 1.5em;
 }
 .banner h2 span{
-    font-size: 1.5em;
+    font-size: 1.8em;
     font-weight: 500;
 }
 
@@ -51,4 +87,49 @@ section{
     text-decoration: none;
     letter-spacing: 2px;
     font-weight: 500;
+    top:20px;
 }
+
+/*About Section */
+
+.heading{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #111;
+}
+
+.heading h2{
+    font-weight: 600;
+    font-size: 38px;    
+}
+
+.content{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.contentBox{
+    padding-right: 30px;
+}
+
+.contentBox p{
+    font-size: 20px;
+}
+
+.contentBox h3{
+    font-style: italic;
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.w50{
+    min-width: 50%;
+}
+
+img{ 
+    max-width: 100%;
+}
+
