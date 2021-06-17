@@ -4,8 +4,14 @@
     padding: 0;
     box-sizing: border-box;
     font-family: monospace; 
+    scroll-behavior: smooth;
 }
 
+
+body{
+    height: auto;
+    width: auto;
+}
 section{
     padding: 100px;
 
@@ -41,8 +47,6 @@ section{
     font-weight: 900;
 
 }
-
-
 
 
 
@@ -92,11 +96,17 @@ section{
 
 /*About Section */
 
-.heading{
+.about{
+    background-color: black;
+    color: white;
+}
+
+.headings{
     width: 100%;
     text-align: center;
     margin-bottom: 30px;
-    color: #111;
+    color: white;
+    font-size: 18px;
 }
 
 .heading h2{
@@ -133,3 +143,221 @@ img{
     max-width: 100%;
 }
 
+/*WORK/PROJECTS SECTION*/
+
+.work{
+    background-color: black;
+}
+.work .content{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.work .content .workBox{
+    width: 50%;
+    padding: 20px;
+}
+
+.work .headings h2{
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    color: white;
+}
+
+ .work .content .workBox img{
+     max-width: 100%;  
+     min-width: 100%;
+     max-height: 100%;
+     min-height: 100%;
+ }
+
+.work .headings .btn{
+    text-align: center;
+}
+
+
+/*SIDE BAR*/
+nav{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position: fixed;
+    width: 70px;
+    margin-top: 150px;
+    box-shadow: 2px 2px 8px 0 rgba(0, 0, 0, .4);
+    z-index: 100;
+
+}
+
+nav li{
+    height: 60px;
+    position: relative;
+}
+
+nav li a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    line-height: 60px;
+    padding-left: 25px;
+    border-bottom: 1px solid rgba(0, 0, 0, .4);
+    transition: all .3 linear;
+}
+
+nav li:nth-child(1) a{
+    background: rgba(203, 212, 252, 0.589);
+}
+nav li:nth-child(2) a{
+    background: #b3b3d1;
+}
+nav li:nth-child(3) a{
+    background: rgba(203, 212, 252, 0.589);
+}
+nav li:nth-child(4) a{
+    background: #b3b3d1;
+}
+
+nav li a i{
+    position: absolute;
+    top: 17px;
+    left: 20px;
+    font-size: 24px;
+}
+
+nav li a span{
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    display: none;
+    
+}
+
+a:hover{
+    z-index: 1;
+    width: 170px;
+    border-bottom: 1px solid rgba(0, 0, 0, .5);
+    box-shadow: 0 0 1px 1px rgba(0, 0, 0, .4);
+}
+
+ul li a:hover span{
+    display: block;
+    padding-left: 25%;
+
+}
+
+.contact{
+    background: black;
+    color: white;
+}
+
+.content{
+    color: white;
+}
+
+.formBox{
+    min-width: 50%;
+    min-height: 60%;
+    max-width: 60%;
+    max-height: 60%;
+    color: white;
+}
+
+.formBox form{
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+.formBox form h3,
+.contactInfo h3{
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    background: black;
+}
+
+.formBox form input, 
+.formBox form textarea{
+    margin-bottom: 25px;
+    padding: 25px;
+    font-size: 16px;
+    background: transparent;
+    border: 2px solid grey;
+    outline: none;
+    color: white;
+    background: black;
+
+}
+
+.formBox form textarea{
+    min-height: 200px;
+}
+
+.formBox form input ::placeholder, 
+.formBox form textarea ::placeholder{
+    color: white;
+}
+
+.formBox form input[type="submit"]
+{
+    max-width: 60%;
+    background: black;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.contactInfo{
+    min-width: 40%;
+}
+.contactBox{
+    position: relative;
+}
+.contactBox .box{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+
+.contactBox .box .icon{
+    min-width: 40px;
+    padding-top: 4px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactBox .box .text{
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: #fff;
+    flex-direction: column;
+    font-weight: 300;
+}
+
+.contactBox .box .text h3{
+    font-weight: 500;
+    color: rgba(186, 223, 224, 0.986);
+}
+
+.copyright{
+    background: black;
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 12px;
+    font-style: italic;
+}
+
+
+/*response features*/
+
+@media (max-width: 990px){
+    header,
+        header.sticky
+    {
+        padding: 20px 100px;
+    }
+    
+}
